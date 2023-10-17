@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <title>Профиль</title>
+    <link rel="stylesheet" href="./css/profile.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" data-header>
+        <div class="header__wrapper">
+          <div class="header__container">
+            <button
+              class="header__toggle-menu"
+              type="button"
+              data-header-menu-toggle
+            ></button>
+            <a class="header__logo" href="#"
+              ><img src="./images/logo/header-logo.svg" alt="Header Logo"
+            /></a>
+            <div class="header__menu header-menu" data-header-menu>
+              <div class="header-menu__wrapper">
+                <ul class="header-menu__items">
+                  <li class="header-menu__item">
+                    <span class="header-menu__link" data-anchor="bank-cards"
+                      >Способы получения займа</span
+                    >
+                  </li>
+                  <li class="header-menu__item">
+                    <span class="header-menu__link" data-anchor="features"
+                      >Почему мы</span
+                    >
+                  </li>
+                  <li class="header-menu__item">
+                    <span class="header-menu__link" data-anchor="reviews"
+                      >Отзывы</span
+                    >
+                  </li>
+                  <li class="header-menu__item">
+                    <span class="header-menu__link" data-anchor="questions"
+                      >Вопросы-ответы</span
+                    >
+                  </li>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+                <a class="header-menu__unsubscribe" href="#">Отписаться</a>
+              </div>
+            </div>
+            <a class="header__sign" href="#"
+              ><svg>
+                <use
+                  href="./images/sprite.svg#signin"
+                  xlink:href="./images/sprite.svg#signin"
+                ></use></svg
+            ></a>
+          </div>
+        </div>
+        <div class="header__overlay" data-header-overlay></div>
+      </header>
+      <main class="content">
+        <div class="profile">
+          <div class="container">
+            <div class="profile__wrapper">
+              <div class="profile__body">
+                <div class="profile-main">
+                  <div class="profile-main__wrapper">
+                    <div class="profile__title"><h5>Профиль</h5></div>
+                    <div class="profile-main__items">
+                      <div class="profile-main__item" data-toggle-card>
+                        <div class="profile-main__edit" data-toggle-btn>
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#pen"
+                              xlink:href="./images/sprite.svg#pen"
+                            ></use>
+                          </svg>
+                        </div>
+                        <span class="profile-main__item-label"
+                          >Личные данные</span
+                        >
+                        <div
+                          class="profile-main__current-data"
+                          data-toggle-current
+                        >
+                          <div class="profile-main__data">
+                            <span class="profile-main__label">ФИО</span>
+                            <span class="profile-main__value"
+                              >Никитин Богдан Сергеевич</span
+                            >
+                          </div>
+                          <div class="profile-main__data">
+                            <span class="profile-main__label"
+                              >Дата рождения</span
+                            >
+                            <span class="profile-main__value">25.10.1995</span>
+                          </div>
+                          <div class="profile-main__data">
+                            <span class="profile-main__label">Телефон</span>
+                            <span class="profile-main__value"
+                              >+8 800 345 67 89</span
+                            >
+                          </div>
+                          <div class="profile-main__data">
+                            <span class="profile-main__label"
+                              >Электронная почта</span
+                            >
+                            <span class="profile-main__value"
+                              >customersmail@gmail.ru</span
+                            >
+                          </div>
+                        </div>
+                        <form
+                          class="profile-main__edit-data"
+                          data-toggle-edit
+                          style="display: none"
+                        >
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <label class="input__group"
+                                ><input
+                                  class="input__area"
+                                  type="text"
+                                  placeholder="ФИО"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main input input_icon">
+                            <div class="input__wrapper">
+                              <label class="input__group"
+                                ><input
+                                  readonly="readonly"
+                                  class="input__area"
+                                  type="text"
+                                  placeholder="Дата рождения"
+                                  data-datepicker />
+                                <div class="input__icon">
+                                  <svg>
+                                    <use
+                                      href="./images/sprite.svg#calendar"
+                                      xlink:href="./images/sprite.svg#calendar"
+                                    ></use>
+                                  </svg></div
+                              ></label>
+                            </div>
+                          </div>
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <label class="input__group"
+                                ><input
+                                  class="input__area"
+                                  type="text"
+                                  placeholder="Телефон"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <label class="input__group"
+                                ><input
+                                  class="input__area"
+                                  type="text"
+                                  placeholder="Электронная почта"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main__button">
+                            <button
+                              class="button button_primary button_sm"
+                              type="submit"
+                            >
+                              Сохранить
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="profile-main__item active">
+                        <div class="profile-main__edit"></div>
+                        <span class="profile-main__item-label"
+                          >Смена пароля</span
+                        >
+                        <form class="profile-main__edit-data">
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <span class="input__label">Текущий пароль</span>
+                              <label class="input__group"
+                                ><input class="input__area" type="password"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <span class="input__label">Новый пароль</span>
+                              <label class="input__group"
+                                ><input class="input__area" type="password"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <span class="input__label"
+                                >Подтвердить пароль</span
+                              >
+                              <label class="input__group"
+                                ><input class="input__area" type="password"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main__button">
+                            <button
+                              class="button button_primary button_sm"
+                              type="submit"
+                            >
+                              Сменить
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="profile-main__item" data-toggle-card>
+                        <div class="profile-main__edit" data-toggle-btn>
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#pen"
+                              xlink:href="./images/sprite.svg#pen"
+                            ></use>
+                          </svg>
+                        </div>
+                        <span class="profile-main__item-label"
+                          >Паспортные данные</span
+                        >
+                        <div
+                          class="profile-main__current-data"
+                          data-toggle-current
+                        >
+                          <div class="profile-main__row">
+                            <div class="profile-main__data">
+                              <span class="profile-main__label">Серия</span>
+                              <span class="profile-main__value">3703</span>
+                            </div>
+                            <div class="profile-main__data">
+                              <span class="profile-main__label"
+                                >Дата выдачи паспорта</span
+                              >
+                              <span class="profile-main__value"
+                                >25.10.1977</span
+                              >
+                            </div>
+                          </div>
+                          <div class="profile-main__row">
+                            <div class="profile-main__data">
+                              <span class="profile-main__label"
+                                >Номер паспорта</span
+                              >
+                              <span class="profile-main__value">833248</span>
+                            </div>
+                            <div class="profile-main__data">
+                              <span class="profile-main__label"
+                                >Место рождения</span
+                              >
+                              <span class="profile-main__value"
+                                >Санкт-Петербург</span
+                              >
+                            </div>
+                          </div>
+                          <div class="profile-main__row">
+                            <div class="profile-main__data">
+                              <span class="profile-main__label"
+                                >Код подразделения</span
+                              >
+                              <span class="profile-main__value">770 - 011</span>
+                            </div>
+                            <div class="profile-main__data">
+                              <span class="profile-main__label">Кем выдан</span>
+                              <span class="profile-main__value"
+                                >ГУ МВД России по г. Санкт-Петербург</span
+                              >
+                            </div>
+                          </div>
+                          <div class="profile-main__row">
+                            <div class="profile-main__data">
+                              <span class="profile-main__label">Ваш пол</span>
+                              <span class="profile-main__value">Мужской</span>
+                            </div>
+                            <div class="profile-main__data"></div>
+                          </div>
+                        </div>
+                        <form
+                          class="profile-main__edit-data"
+                          data-toggle-edit
+                          style="display: none"
+                        >
+                          <div class="profile-main__row">
+                            <div class="input-main input">
+                              <div class="input__wrapper">
+                                <label class="input__group"
+                                  ><input
+                                    class="input__area"
+                                    type="tel"
+                                    placeholder="Серия"
+                                /></label>
+                              </div>
+                            </div>
+                            <div class="input-main input input_icon">
+                              <div class="input__wrapper">
+                                <label class="input__group"
+                                  ><input
+                                    readonly="readonly"
+                                    class="input__area"
+                                    type="text"
+                                    placeholder="Дата выдачи"
+                                    data-datepicker />
+                                  <div class="input__icon">
+                                    <svg>
+                                      <use
+                                        href="./images/sprite.svg#calendar"
+                                        xlink:href="./images/sprite.svg#calendar"
+                                      ></use>
+                                    </svg></div
+                                ></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <label class="input__group"
+                                ><input
+                                  class="input__area"
+                                  type="tel"
+                                  placeholder="Номер паспорта"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main select" data-select>
+                            <div class="select__header" data-select-header>
+                              <input
+                                class="select__input"
+                                type="text"
+                                data-select-input
+                              />
+                              <span
+                                class="select__text"
+                                data-select-text="Место рождения"
+                                >Текст</span
+                              >
+                              <svg class="select__icon">
+                                <use
+                                  href="./images/sprite.svg#arrow-select"
+                                  xlink:href="./images/sprite.svg#arrow-select"
+                                ></use>
+                              </svg>
+                            </div>
+                            <ul class="select__options" data-select-options>
+                              <li
+                                class="select__option"
+                                data-select-option="option_1"
+                              >
+                                Москва
+                              </li>
+                              <li
+                                class="select__option"
+                                data-select-option="option_2"
+                              >
+                                Санкт-Петербург
+                              </li>
+                              <li
+                                class="select__option"
+                                data-select-option="option_3"
+                              >
+                                Екатеренбург
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <label class="input__group"
+                                ><input
+                                  class="input__area"
+                                  type="tel"
+                                  placeholder="Код подразделения"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main select" data-select>
+                            <div class="select__header" data-select-header>
+                              <input
+                                class="select__input"
+                                type="text"
+                                data-select-input
+                              />
+                              <span
+                                class="select__text"
+                                data-select-text="Кем выдан"
+                                >Текст</span
+                              >
+                              <svg class="select__icon">
+                                <use
+                                  href="./images/sprite.svg#arrow-select"
+                                  xlink:href="./images/sprite.svg#arrow-select"
+                                ></use>
+                              </svg>
+                            </div>
+                            <ul class="select__options" data-select-options>
+                              <li
+                                class="select__option"
+                                data-select-option="option_1"
+                              >
+                                ГУ МВД России по г. Санкт-Петербург
+                              </li>
+                              <li
+                                class="select__option"
+                                data-select-option="option_2"
+                              >
+                                Санкт-Петербург
+                              </li>
+                              <li
+                                class="select__option"
+                                data-select-option="option_3"
+                              >
+                                Екатеренбург
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="radio">
+                            <div class="radio__wrapper">
+                              <span class="radio__label">Ваш пол</span>
+                              <div class="radio__items">
+                                <label class="radio__item"
+                                  ><input
+                                    checked="checked"
+                                    class="radio__input"
+                                    name="sex"
+                                    value="male"
+                                    type="radio"
+                                  />
+                                  <div class="radio__icon"></div>
+                                  <p class="radio__text">Муж</p></label
+                                >
+                                <label class="radio__item"
+                                  ><input
+                                    class="radio__input"
+                                    name="sex"
+                                    value="female"
+                                    type="radio"
+                                  />
+                                  <div class="radio__icon"></div>
+                                  <p class="radio__text">Жен</p></label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-main__button">
+                            <button
+                              class="button button_primary button_sm"
+                              type="submit"
+                            >
+                              Сохранить
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="profile-main__item" data-toggle-card>
+                        <div class="profile-main__edit" data-toggle-btn>
+                          <svg>
+                            <use
+                              href="./images/sprite.svg#pen"
+                              xlink:href="./images/sprite.svg#pen"
+                            ></use>
+                          </svg>
+                        </div>
+                        <span class="profile-main__item-label"
+                          >Адрес регистрации</span
+                        >
+                        <div
+                          class="profile-main__current-data"
+                          data-toggle-current
+                        >
+                          <div class="profile-main__row">
+                            <div class="profile-main__data">
+                              <span class="profile-main__label">Область</span>
+                              <span class="profile-main__value"
+                                >Ленинградская</span
+                              >
+                            </div>
+                            <div class="profile-main__data">
+                              <span class="profile-main__label">Улица</span>
+                              <span class="profile-main__value"
+                                >Рубинштейна</span
+                              >
+                            </div>
+                          </div>
+                          <div class="profile-main__row">
+                            <div class="profile-main__data">
+                              <span class="profile-main__label"
+                                >Населенный пункт</span
+                              >
+                              <span class="profile-main__value"
+                                >Санкт-Петербург</span
+                              >
+                            </div>
+                            <div class="profile-main__data">
+                              <span class="profile-main__label"
+                                >Дом, квартира</span
+                              >
+                              <span class="profile-main__value">14А, 57</span>
+                            </div>
+                          </div>
+                        </div>
+                        <form
+                          class="profile-main__edit-data"
+                          data-toggle-edit
+                          style="display: none"
+                        >
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <label class="input__group"
+                                ><input
+                                  class="input__area"
+                                  type="text"
+                                  placeholder="Область"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <label class="input__group"
+                                ><input
+                                  class="input__area"
+                                  type="text"
+                                  placeholder="Улица"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <label class="input__group"
+                                ><input
+                                  class="input__area"
+                                  type="text"
+                                  placeholder="Населенный пункт"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main input">
+                            <div class="input__wrapper">
+                              <label class="input__group"
+                                ><input
+                                  class="input__area"
+                                  type="text"
+                                  placeholder="Дом, квартира"
+                              /></label>
+                            </div>
+                          </div>
+                          <div class="input-main__button">
+                            <button
+                              class="button button_primary button_sm"
+                              type="submit"
+                            >
+                              Сохранить
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="profile-main__item">
+                      <span class="profile-main__item-label"
+                        >Социальные сети</span
+                      >
+                      <div class="profile-main__socials">
+                        <div class="profile-main__social-item">
+                          <div class="profile-main__social-icon">
+                            <img
+                              src="./images/profile-main/icon_01.svg"
+                              alt="icon"
+                            />
+                          </div>
+                          <span class="profile-main__social-label"
+                            >Twitter</span
+                          >
+                          <div class="profile-main__social-del">
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#trash"
+                                xlink:href="./images/sprite.svg#trash"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="profile-main__social-item">
+                          <div class="profile-main__social-icon">
+                            <img
+                              src="./images/profile-main/icon_02.svg"
+                              alt="icon"
+                            />
+                          </div>
+                          <span class="profile-main__social-label"
+                            >Facebook</span
+                          >
+                          <div class="profile-main__social-del">
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#trash"
+                                xlink:href="./images/sprite.svg#trash"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="profile-main__social-item">
+                          <div class="profile-main__social-icon">
+                            <img
+                              src="./images/profile-main/icon_03.svg"
+                              alt="icon"
+                            />
+                          </div>
+                          <span class="profile-main__social-label"
+                            >Vkontakte</span
+                          >
+                          <div class="profile-main__social-del">
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#trash"
+                                xlink:href="./images/sprite.svg#trash"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="profile-main__social-item">
+                          <div class="profile-main__social-icon">
+                            <img
+                              src="./images/profile-main/icon_04.svg"
+                              alt="icon"
+                            />
+                          </div>
+                          <span class="profile-main__social-label"
+                            >Linkedin</span
+                          >
+                          <div class="profile-main__social-del">
+                            <svg>
+                              <use
+                                href="./images/sprite.svg#trash"
+                                xlink:href="./images/sprite.svg#trash"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__header">
+            <a class="footer__logo" href="#"
+              ><img src="./images/logo/footer-logo.svg" alt="logo"
+            /></a>
+            <div class="footer__contacts">
+              <a class="footer__contact" href="tel:+9999999999"
+                >8 (495) 845-27-71</a
+              >
+              <a class="footer__contact" href="mailto:support@unocredit.ru"
+                >support@unocredit.ru</a
+              >
+            </div>
+            <ul class="footer__actions">
+              <li class="footer__action">
+                <span data-anchor="bank-cards">Способы получения займа</span>
+              </li>
+              <li class="footer__action">
+                <span data-anchor="features">Почему мы</span>
+              </li>
+              <li class="footer__action">
+                <span data-anchor="reviews">Отзывы</span>
+              </li>
+              <li class="footer__action">
+                <span data-anchor="questions">Вопросы-ответы</span>
+              </li>
+              <li class="footer__action"><a href="#">Контакты</a></li>
+              <li class="footer__action"><a href="#">Отписаться</a></li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <p>
+              Услугу платного подбора займов "CreditPanda" предоставляет ИП
+              Пермякова О. Б. (ОГРНИП 320028000015241, ИНН: 026602783987) ИП
+              Пермякова О. Б. зарегистрирован в реестре РКН, как оператор
+              персональных данных (регистр. номер: 2-20-007218). Выдача займов у
+              партнеров осуществляется в российских рублях, на банковский счет,
+              наличными или на карту, гражданам Российской Федерации. Сервис не
+              относится к финансовым учреждениям, не является кредитором или
+              банком и не несет ответственности за заключенные впоследствие
+              клиентами и партерами договоры кредитования. Доступные суммы
+              займов: от 1 000 рублей до 100 000 рублей. Срок займа: от 62 дней,
+              при процентной ставке: от 0% до 365% годовых. Находясь на сайте, а
+              так же совершая любые действия на сайте, Вы принимаете условия
+              договора публичной оферты,
+              <a href="#">соглашение о применении рекуррентных платежей</a>,
+              <a href="#"
+                >соглашение о хранении учетных данных владельца банковской
+                карты</a
+              >, <a href="#">политику обработки персональных данных</a>,
+              тарифами сервиса, а так же даете согласие на получение
+              <a href="#">рекламных материалов</a> и на
+              <a href="#">обработку персональных данных.</a>
+            </p>
+            <p>
+              Режим работы службы поддержки: 10:00 - 19:00, без выходных. По
+              любым вопросам вы можете связаться со специалистами сервиса по
+              электронной почте
+              <a href="mailto:support@creditpanda.ru">support@creditpanda.ru</a>
+              или по телефону <a href="tel:+9999999999">8 (495) 374-68-08</a>.
+              Стоимость услуги — 1945 RUB. Наличие платной услуги не гарантирует
+              Вам получение займа. Клиент может отказаться от услуги подбора
+              займов самостоятельно, в любое время -
+              <a href="#">Отказаться от услуг.</a>
+            </p>
+          </div>
+          <div class="footer__partners">
+            <h4 class="footer__title">Наши партнёры</h4>
+            <ul class="footer__partners-list">
+              <li>
+                Екапуста ООО МКК «Русинтерфинанс» Лицензия ЦБ РФ: 2120754001243
+                Адрес: 630055, Новосибирская область, г. Новосибирск, ул.
+                Гнесиных, д. 10/1, оф. 202
+              </li>
+              <li>
+                ЗАЙМЕР ООО МФК «Займер» Лицензия ЦБ РФ: 651303532004088 Адрес:
+                630099, Новосибирская область, г. Новосибирск, ул. Октябрьская
+                Магистраль, д. 3, оф. 906
+              </li>
+              <li>
+                Money Man ООО МФК "Мани Мен" Лицензия ЦБ РФ: 2110177000478
+                Адрес: 121096, г. Москва, ул. Василисы Кожиной, д. 1, оф. Д13
+              </li>
+              <li>
+                Zaymigo ООО «Займиго МФК» Лицензия ЦБ РФ: 651303322004222 Адрес:
+                603093, Нижегородская область, г. Нижний Новгород, ул.
+                Ковровская, д. 21А, пом. 603
+              </li>
+              <li>
+                МигКредит ООО МФК «МигКредит» Лицензия ЦБ РФ: 2110177000037
+                Адрес: 127018, г. Москва, Сущевский вал, д. 5, стр. 3
+              </li>
+              <li>
+                Webbankir ООО МФК «ВЭББАНКИР» Лицензия ЦБ РФ: 2120177002077
+                Адрес: 125466, г. Москва, ул. Соколово-Мещерская, д. 29, оф. 308
+              </li>
+              <li>
+                Kviku, ООО МФК “ЭйрЛоанс”, Лицензия ЦБ РФ: 651303045003744.
+                Адрес: г. Москва, 123112 Пресненская наб. 8, стр. 1
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/profile.js"></script>
+  </body>
+</html>
